@@ -47,7 +47,7 @@ void USART1_CFG(u32 baudrate)
 
     USART1->CTLR3 |= USART_HardwareFlowControl_None;
 
-    USART1->BRR = 0X34;  /* Set 460800 baudrate */
+    USART1->BRR = 0Xd0;  /* Set 115200 baudrate */
 
     USART1->CTLR1 |= ((uint16_t)0x2000); /* Enables the specified USART peripheral */
 
