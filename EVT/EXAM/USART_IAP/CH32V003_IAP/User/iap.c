@@ -149,9 +149,8 @@ void GPIO_Cfg_init(void)
 {
 
 
-   GPIOC->CFGLR&=~0x4;
    GPIOC->CFGLR=0x8;
-   GPIOC->BSHR = ((uint32_t)0x01);
+   GPIOC->OUTDR=((uint32_t)0x00);
 
 
 }
